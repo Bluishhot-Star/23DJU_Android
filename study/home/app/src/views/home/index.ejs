@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/style.css">
+    <script src="https://kit.fontawesome.com/483301234b.js" crossorigin="anonymous"></script>
+    <script src="/js/home/main.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%=javascriptKey%>"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="flex-container">
+        <div class="flex-container__log">
+            <div><a href="/">백엔드 공부를 위한 웹페이지</a></div>
+        </div>
+        <ul class="flex-container__menu">
+            <li><a href="/database">데이터베이스 공부</a></li>
+            <li><a href="/API">API 공부</a></li>
+        </ul>
+        <ul class="flex-container__link">
+            <li><a href="https://github.com/seok0338?tab=repositories">git</a></li>
+        </ul>
+        <a href="#" class="flex-container__toogleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <h2><a id="kakaoMap" href="https://developers.kakao.com/console/app/710553">카카오 맵 API</a></h2>
+    <div id="map"><script src="/js/home/map.js"></script></div>
+    
+    
+
+</body>
+</html>

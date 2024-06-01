@@ -1,0 +1,143 @@
+.create #button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: black;
+  width: 80%;
+  border: 0;
+  margin: 0 auto;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+h1{
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+}
+body{
+    margin: 0;
+}
+#map{
+    padding: 60px;
+    width: 100%;
+    height: 600px;
+}
+#button{
+    color: black;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+}
+.flex-container__logo{
+    font-size: 24px;
+}
+
+.flex-container__menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.flex-container__menu li:hover{
+    background-color: tomato;
+    border-radius: 4px;
+}
+.flex-container__menu li{
+    padding: 8px 12px;
+}
+.flex-container__link{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.flex-container__toogleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#kakaoMap{
+    color: black;
+}
+.create{
+    display: inline ;
+    
+}
+.create__title{
+    padding: 5px 5px;
+}
+.create__word{
+    padding: 5px 5px;
+}
+.create__save{
+    padding: 5px 5px;
+}
+#create-text1{
+    width: 100%;
+    height: 20px;
+
+    font-size: 20px;
+}
+#create-text2{
+    width: 100%;
+    height: 500px;
+
+    font-size: 20px;
+}
+.login-form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+@media screen and (max-width:760px){
+    .flex-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .flex-container__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .flex-container__menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .flex-container__link{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .flex-container__toogleBtn{
+        display: block;
+    }
+    .flex-container__menu.active,
+    .flex-container__link.active{
+        display: flex;
+    }
+    .map{
+        display: block;
+    }
+}
